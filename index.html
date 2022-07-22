@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Explorer</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        .carousel-img {
+            width: 100%;
+            height: 500px;
+
+        }
+
+        .button {
+            width: 100%;
+            border-radius: 20px;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            font-weight: 700;
+            background-color: darkslategray;
+            color: wheat;
+        }
+
+        footer {
+            height: 100px;
+            width: 80%;
+            margin: 50px auto 0;
+            background-color: black;
+            font-size: 30px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="position-relative">
+            <nav class="navbar navbar-expand-lg navbar navbar navbar-dark bg-dark ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img style="width: 40px;" style="height: 40px;"
+                            src="https://cdn-icons-png.flaticon.com/512/1005/1005142.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <button type="button" class="mx-3 btn btn-primary position-relative">
+                                Mails <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99
+                                    <span class="visually-hidden">unread messages</span></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.onlc.com/blog/wp-content/uploads/2017/07/ONLC-2017-4.png"
+                                class="d-block w-100 carousel-img" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ytimg.com/vi/eBG64a1NaMs/maxresdefault.jpg"
+                                class="d-block w-100 carousel-img"
+                                alt="https://blog.grinfer.com/wp-content/uploads/2020/02/How-to-Learn-Computer-Programming-Languages.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200114192751/How-to-Learn-Programming.png"
+                                class="d-block w-100 carousel-img" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </header>
+        <section>
+            <h1 style="margin: 50px 80px 0;">Bootstrap Explorer</h1>
+            <div style="width: 80%; margin: 50px auto;">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card shadow">
+                            <div class="card text-bg-success">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Success card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card shadow">
+                            <div class="card text-bg-success">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Success card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card shadow">
+                            <div class="card text-bg-success">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Success card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card mb-3" style="max-width: 80%; height: auto; margin: auto;">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img style="width: 100%; height:auto;"
+                                src="https://media.nature.com/lw800/magazine-assets/d41586-019-00653-5/d41586-019-00653-5_16459152.jpg"
+                                class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h1 class="card-title text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Eligendi, in?</h1>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer Lorem ipsum dolor
+                                    sit amet consectetur, adipisicing elit. Quaerat corrupti aut voluptate dolorem
+                                    voluptatibus laborum nobis quod, ad sint nam maxime consequuntur, odio excepturi.
+                                    Beatae saepe iure laudantium obcaecati temporibus.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row row-cols-1 row-cols-md-3 g-4" style="width: 80%; margin: 40px auto;">
+                    <div class="col">
+                        <div class="card  shadow-lg" style="min-height: 400px;">
+                            <img style="height: 220px;"
+                                src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces,q_auto/https://www.gcu.edu/sites/default/files/2020-09/programming.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-lg" style="min-height: 400px;">
+                            <img style="height: 220px;"
+                                src="https://www.inet-pc.com/Content/files/BusinessPCs/BusinessPC-Programming.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  shadow-lg" style="min-height: 400px;">
+                            <img style="height: 220px;" src="https://miro.medium.com/max/1400/0*xUVsdkjhmwLmuFbs"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  shadow-lg" style="min-height: 400px;">
+                            <img style="height: 220px;"
+                                src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces,q_auto/https://www.gcu.edu/sites/default/files/2020-09/computer_programmer.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  shadow-lg" style="min-height: 400px;">
+                            <img style="height: 220px;"
+                                src="https://res.cloudinary.com/highereducation/images/v1631898263/ComputerScience.org/GettyImages-1084167628/GettyImages-1084167628.jpg?_i=AA"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  shadow-lg" style="min-height: 400px;">
+                            <img style="height: 220px;"
+                                src="https://www.forbes.com/advisor/wp-content/uploads/2022/06/Computer_programmer.jpeg.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 80%; margin: 50px auto;">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img style="height: 100%; width:100%;"
+                            src="https://f67f00a708.clvaw-cdnwnd.com/53094d8dce9917a99eaf0657c1311453/200000342-5d5385d53a/progress.jpeg?ph=f67f00a708"
+                            alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <h4>HTML</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 95%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <br>
+                        <h4>CSS</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 80%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <br>
+                        <h4>Bootstrap</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 85%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <br>
+                        <h4>Tailwind css</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 65%"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <br>
+                        <h4>JavaScript</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 80%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <br>
+                        <h4>Node JS</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 30%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <br>
+                        <h4>Express js</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="width: 80%; margin: 50px auto;">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card shadow">
+                            <div class="card text-bg-primary">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Success card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card shadow">
+                            <div class="card text-bg-primary">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Success card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card shadow">
+                            <div class="card text-bg-primary">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Success card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 80%; margin: 50px auto;">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img style="height: 100%; width:100%;"
+                                    src="https://f67f00a708.clvaw-cdnwnd.com/53094d8dce9917a99eaf0657c1311453/200000342-5d5385d53a/progress.jpeg?ph=f67f00a708"
+                                    alt="">
+                            </div>
+                            <div class="col-sm-6 bg-secondary p-5 rounded">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword"
+                                        placeholder="Password">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                                <div class="form-floating">
+                                    <button type="button" class="btn-primary mt-3 button">Submit</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+        </section>
+        <footer>
+            <p>Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> alamin977p@gmail.com
+            </p>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
